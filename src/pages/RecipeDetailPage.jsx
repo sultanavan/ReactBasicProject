@@ -11,7 +11,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-export const RecipeDetailPage = ({ recipe, onBack }) => {
+export default function ({ recipe, onBack }) {
   return (
     <Box p={6} maxW="7xl" mx="auto">
       <Button mb={4} onClick={onBack}>
@@ -174,4 +174,4 @@ export const RecipeDetailPage = ({ recipe, onBack }) => {
       </SimpleGrid>
     </Box>
   );
-};
+}
