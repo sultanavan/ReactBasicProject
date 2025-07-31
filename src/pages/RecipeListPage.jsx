@@ -25,7 +25,7 @@ export default function RecipeListPage({ data, onSelect }) {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
         {filtered.map(({ recipe }) => (
           <RecipeCard
-            key={`${recipe.label}-${recipe.image}`}
+            key={`${recipe.url}`}
             recipe={recipe}
             onClick={() => onSelect(recipe)}
           />
